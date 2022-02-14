@@ -351,7 +351,7 @@ for (mod in MODEL_LIST) {
     tm_polygons("values", border.col = "grey30", title="",palette = "seq",breaks = c(-Inf, -8, -3,  0, 3, 8, 20,  Inf)) +
     tm_shape(US_states) +
     tm_borders(lwd=2, col = "black", alpha = .5) +
-    tm_layout(title=paste0(mod, " (incidence-weighted increase of ",signif(avgVal,3)," M)"),
+    tm_layout(title=paste0(mod, " (incidence-weighted increase of ",signif(avgVal,3)," mm)"),
               title.size = 1,
               title.position = c("center", "top"),
               legend.text.size=0.8, aes.palette = list(seq = "RdBu"))
